@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen">
+    <div id="intro" class="">
+      <div class="search-box flex justify-center">
+        <div class="inline h-96">
+          <h1 class="font-bold text-4xl md:text-6xl text-white pt-16 pb-24">Weather App</h1>
+          <div class="flex justify-center item-center w-full">
+            <form id="form" class="relative w-11/12" name="form">
+              <input
+                class="w-full text-white p-4 rounded-full border-0 focus:shadow-outline backdrop-blur-sm bg-neutral-900/40"
+                type="text"
+                id="search"
+                placeholder="Search By Location"
+                autocomplete="off"
+              />
+              <div class="absolute inset-y-0 right-0 flex items-center px-6 py-6">
+                <button type="submit" class="hover:opacity-50">
+                  <ion-icon class="w-6 h-6 text-white" name="search-outline"></ion-icon>
+                </button>
+              </div>
+            </form>
+          </div>
+          <h2 id="gfg"></h2>
+        </div>
+      </div>
+    </div>
+
+    <main id="main" class="output flex justify-center items-center"></main>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="src/js/jquery.min.js"></script>
+    <script src="src/js/owl.carousel.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
